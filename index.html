@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiUx Proj</title>
+    <link rel="icon" type="image/png" href="uiux logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        .header {
+            height: 100vh;
+            width: 100%;
+            background-image: url(wt3.jpg);
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+            background-image: fixed;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text-box p {
+            margin: 20px 0 40px;
+            font-size: 40px;
+            color: #fff;
+        }
+
+        .text-box1 {
+            width: 100%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text-box1 p1 {
+            margin: 20px 0px 40px;
+            font-size: 100px;
+            font-family: cursive;
+            color: #fff;
+        }
+
+        .events-col,
+	.events-col1 {
+            flex-basis: 50%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 20px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .events-col img,
+        .events-col1 img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        
+        #check {
+            display: none;
+        }
+
+        @media (max-width: 710px) {
+
+            .events-col,
+            .events-col1 {
+                flex-basis: 100%;
+                padding: 20px;
+            }
+
+            .events-col img,
+            .events-col1 img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            
+            .text-box1 p1{
+                font-size: 60px;
+
+            }
+        }
+
+        .sec {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .p {
+            color: #777;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+            padding: 10px;
+        }
+
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sec-col {
+            flex-basis: 31%;
+            background: #daf0f6;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .sec-col:hover {
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .events {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .layer {
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .layer h4 {
+            width: 100%;
+            font-weight: 500;
+            color: white;
+            font-size: 26px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        .layer:hover h4 {
+            bottom: 49%;
+            opacity: 1;
+        }
+
+        .testimonials {
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .testimonial-col {
+            flex-basis: 44%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: left;
+            background: #daf0f6;
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+        }
+
+        .testimonial-col h6 {
+            margin-top: 15px;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .testimonial-col .fa {
+            color: orange;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <br>
+        <nav>
+            <img src="clguiux.png">
+            <h1>MEENAKSHI SUNDARARAJAN ENGINEERING COLLEGE</h1>
+            <br>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="">VENUE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn" onclick="toggleNav()">&#9776;</div>
+        </nav>
+        </br>
+        <div class="text-box">
+            <p>National Level Technical Symposium</p>
+        </div>
+        <div class="text-box1">
+            <p1>TECHFEST 2K24</p1>
+        </div>
+    </section>
+
+    <section class="sec">
+        <h1>From Secretary's Desk</h1>
+        <div class="row">
+            <div class="sec-col">
+                <p>Prof. K.R. Sundararajan, one of the eminent educationists of South India, established Indian Institute of Engineering Technology (IIET) in the year 1947 when there were only a few Engineering Colleges in the state and young aspirants could not find opportunities to become engineers.In his last years, Prof. </p>
+            </div>
+            <div class="sec-col">
+                <p>This institution is a part of the prestigious KRS Group of Institutions which also includes the renowned IIET.The institutions on the KRS Campus are known for the quality education they impart and their stringent levels of discipline. We have consistently outshone all our peers, not only in academics, but in co-curricular activities as well.</p>
+            </div>
+            <div class="sec-col">
+                <p>The management strives constantly to develop this institution into a "CENTRE OF EXCELLENCE" imparting Engineering education to young men and women, grooming their overall personality with the highest emphasis on ethical values and honing them to face the challenges of the industry and the nation at large.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="events">
+        <h1>Our Events</h1>
+        <div class="row">
+            <div class="events-col">
+                <img src="tech.jpg">
+                <div class="layer">
+                    <h4>Technical</h4>
+                </div>
+            </div>
+            <div class="events-col1">
+                <img src="nontech.jpg">
+                <div class="layer">
+                    <h4>Non Technical</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="row">
+            <div class="testimonial-col">
+                <div>
+                    <h6>Christine Berkley</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <div>
+                    <h6>David Byer</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h2>Follow us on</h2>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </section>
+
+    <script>
+        function toggleNav() {
+            const navLinks = document.querySelector(".nav-links");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

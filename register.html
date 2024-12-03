@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="uiux logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Page</title>
+    <style>
+        body, html {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(165, 8, 126, 0.5), rgba(159, 8, 116, 0.5)),url("https://wallpaperaccess.com/full/1393206.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            padding: 16px 32px;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <img src="clguiux.png">
+            <h1>MEENAKSHI SUNDARARAJAN ENGINEERING COLLEGE</h1>
+            <br>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="">VENUE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn" onclick="toggleNav()">&#9776;</div>
+        </nav>
+    </section>
+
+    <h2>Registration</h2>
+    
+    <form action="/register" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="regno">Register Number</label>
+        <input type="number" id="regno" name="regno" required><br>
+        <label for="clg">College Name</label>
+        <input type="text" id="clg" name="clg" ><br>
+        <label for="dept">Department</label>
+        <select id="dept" name="dept">
+            <option value="mech">Mechanical Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="ece">Electrical and Communication Engineering</option>
+            <option value="eee">Electrical and Electronical Engineering</option>
+            <option value="aids">Artificial Intelligence and Data Science</option>
+            <option value="it">Information Technology</option>
+            <option value="cse">Computer Science Engineering</option>
+        </select><br>
+        <label for="phno">Phone Number</label>
+        <input type="text" id="phno" name="phno" required><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="spl">Are You Specially Abled</label>
+        <label>
+            <input type="radio" name="yes" value="yes">
+            Yes
+        </label>
+        <label>
+            <input type="radio" name="no" value="no">
+            No
+        </label>
+        <br>
+        <center>
+        <button onclick="">
+            <img class="hand-icon" src="hand.png" alt="Hand Icon">
+            <span style="font-size: 18px;">Register</span> <!-- Increased font size -->
+        </button>
+        </center>
+    </form>
+    <br><br>
+    <footer>
+        &copy; 2025 Event Champ
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="uiux logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Champion</title>
+  <style>
+    body, html {
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    body {
+      /*background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://wallpapercave.com/wp/wp7488230.jpg');*/
+      background-image: url('https://wallpapercave.com/wp/wp7488230.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed; /* Fix the background image */
+      min-height: 100vh; /* Ensure linear gradient covers the entire viewport */
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <section class="header">
+  <nav>
+    <img src="clguiux.png">
+    <h1>MEENAKSHI SUNDARARAJAN ENGINEERING COLLEGE</h1>
+    <br>
+    <div class="nav-links" id="navLinks">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="">VENUE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="nav-btn" onclick="toggleNav()">&#9776;</div>
+</nav>
+  </section>
+  <div class="main-content">
+    <!-- Event cards go here -->
+    <div class="event-cards-container">
+      <div class="event-card">
+        <div class="left">
+          <a href="your_link_url">
+            <img src="coding.jpg">
+          </a>
+        </div>
+        <div class="content">
+          <h2>Zero Error Coding </h2>
+          <p>Date: January 1, 2025</p>
+          <p>Location: City1, Country1</p>
+          <p>Description: Zero error coding emphasizes writing code with the goal of having zero defects or bugs. </p>
+          <button onclick="register()">
+            <img class="hand-icon" src="hand.png" alt="Hand Icon">
+            <span style="font-size: 18px;">Register</span> <!-- Increased font size -->
+          </button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="middle">
+          <a href="your_link_url">
+            <img src="https://wallpapercave.com/wp/wp2700130.jpg" alt="Event Image">
+          </a>
+        </div>
+        <div class="content">
+          <h2>Hackathon</h2>
+          <p>Date: January 2, 2025</p>
+          <p>Location: City2, Country2</p>
+          <p>Description: An event where individuals or teams come together to collaboratively work on solving problems or creating innovative projects, typically within a specific timeframe.</p>
+          <button onclick="register()">
+            <img class="hand-icon" src="hand.png" alt="Hand Icon">
+            <span style="font-size: 18px;">Register</span> <!-- Increased font size -->
+          </button>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="right">
+          <a href="your_link_url">
+            <img src="paper.jpg">
+          </a>
+        </div>
+        <div class="content">
+          <h2>Paper Presentation</h2>
+          <p>Date: January 3, 2025</p>
+          <p>Location: City3, Country3</p>
+          <p>Description: Presenting a paper involves effectively communicating your research or findings to an audience.</p>
+          <button onclick="register()">
+            <img class="hand-icon" src="hand.png" alt="Hand Icon">
+            <span style="font-size: 18px;">Register</span> <!-- Increased font size -->
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <footer>
+    &copy; 2025 Event Champ
+  </footer>
+  <script>
+    function toggleNav() {
+        var navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("show");
+    }
+    function register() {
+      window.location.href = "register.html";
+    }
+</script>
+</body>
+</html>
